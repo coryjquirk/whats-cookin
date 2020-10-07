@@ -5,28 +5,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>What's cooking?</title>
+    <script src="https://kit.fontawesome.com/4439e3b362.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 
 <body>
     <div class="parent">
         <div class="div1">
             <h1>What's Cooking?</h1>
+            <!-- Have header inside of image -->
         </div>
         <div class="div2">
-            <img src="https://res.cloudinary.com/grohealth/image/upload/$wpsize_!_cld_full!,w_2119,h_1415,c_scale/v1588092494/iStock-10131071761-1.jpg" alt="Picture of food">
+            <img src="https://res.cloudinary.com/grohealth/image/upload/$wpsize_!_cld_full!,w_2119,h_1415,c_scale/v1588092494/iStock-10131071761-1.jpg"
+                alt="Picture of food">
             <input class="ingredientList" type="text" placeholder="Ingredients here">
             <!-- Make #submitBtn into a button tag, use fontawesome to include search icon -->
-            <input id="submitBtn" type="submit">
+            <button id="submitBtn" type="submit"><span><i class="fas fa-search"></i></span></button>
         </div>
         <div class="div3">
-
+            <div class="results">
+                <button><i class="fas fa-utensils"></i></button>
+                <button><i class="fas fa-utensils"></i></button>
+                <button><i class="fas fa-utensils"></i></button>
+                <div>Results:</div>
+                <div>
+                    <h3>Food Title</h3>
+                    <img src="https://www.cookingclassy.com/wp-content/uploads/2019/07/steak-marinade-12-500x500.jpg"
+                        alt="Steak">
+                    <p>Description with ingredients</p>
+                </div>
+                <!-- <div>
+                    <h3>Food Title</h3>
+                    <img src="https://www.cookingclassy.com/wp-content/uploads/2019/07/steak-marinade-12-500x500.jpg"
+                        alt="Steak">
+                    <p>Description with ingredients</p>
+                </div> -->
+            </div>
         </div>
-        <!-- <div class="div4">App</div> -->
     </div>
-
-
-
 
 </body>
 
