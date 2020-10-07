@@ -13,15 +13,16 @@
 <body>
     <div class="parent">
         <div class="div1">
-            <h1>What's Cooking?</h1>
-            <!-- Have header inside of image -->
+            <div><span class="header"><h1>What's Cooking?</h1></span></div>
         </div>
         <div class="div2">
-            <img src="https://res.cloudinary.com/grohealth/image/upload/$wpsize_!_cld_full!,w_2119,h_1415,c_scale/v1588092494/iStock-10131071761-1.jpg"
+            <img src="https://www.alices.kitchen/wp-content/uploads/Cookware/basil-cook-cooking-691114-1280x640.jpg"
                 alt="Picture of food">
-            <input class="ingredientList" type="text" placeholder="Ingredients here">
-            <!-- Make #submitBtn into a button tag, use fontawesome to include search icon -->
+            <form action="">
+            <input class="ingredientList" type="text" for="search" placeholder="Ingredients here">
+
             <button id="submitBtn" type="submit"><span><i class="fas fa-search"></i></span></button>
+        </form>
         </div>
         <div class="div3">
             <div class="results">
@@ -31,16 +32,22 @@
                 <div>Results:</div>
                 <div>
                     <h3>Food Title</h3>
-                    <img src="https://www.cookingclassy.com/wp-content/uploads/2019/07/steak-marinade-12-500x500.jpg"
+                    <img class="recipe" src="https://www.cookingclassy.com/wp-content/uploads/2019/07/steak-marinade-12-500x500.jpg"
                         alt="Steak">
                     <p>Description with ingredients</p>
                 </div>
-                <!-- <div>
+                <div>
                     <h3>Food Title</h3>
-                    <img src="https://www.cookingclassy.com/wp-content/uploads/2019/07/steak-marinade-12-500x500.jpg"
+                    <img class="recipe" src="https://www.cookingclassy.com/wp-content/uploads/2019/07/steak-marinade-12-500x500.jpg"
                         alt="Steak">
                     <p>Description with ingredients</p>
-                </div> -->
+                </div>
+                <div>
+                    <h3>Food Title</h3>
+                    <img class="recipe" src="https://www.cookingclassy.com/wp-content/uploads/2019/07/steak-marinade-12-500x500.jpg"
+                        alt="Steak">
+                    <p>Description with ingredients</p>
+                </div>
             </div>
         </div>
     </div>
