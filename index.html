@@ -1,59 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <!-- <link href="style.css" rel="stylesheet" type="text/css"> -->
+    <title>What's cooking?</title>
     <script src="https://kit.fontawesome.com/4439e3b362.js" crossorigin="anonymous"></script>
-
-    <style>
-        #thumb {
-            height: 150px;
-            width: 150px;
-        }
-    </style>
-</head>
-<body>
-
-    <div id="buttonBox"></div>
-    <form onSubmit="return false;" id="recipe-form">
-        <label for="ingredient-input">Enter an ingredient to find a recipe</label>
-        <input type="text" id="searchBar"><br>
-        <input id="searchBtn" type="submit" value="Search for ingredient">
-      </form>
-
-    <p id="recipeDisplay">
-        <!-- display, thumbnail, title -->
-        <h2 id="recipeName1"></h2>
-        <a id="recipeLink1"><!-- --></a>
-        <p id="ingList1"></p>
-
-        <!-- create variables of recipe name,
-        recipe thumbnail, recipe url -->
-
-        <!-- need to decide which info for each
-        recipe we want to display for user -->
-
-        <p id="mealThumb1"></p>
-    </p>
-    <p id="recipeDisplay">
-        <!-- display, thumbnail, title -->
-        <h2 id="recipeName2"></h2>
-        <a id="recipeLink2"><!-- --></a>
-        <p id="ingList2"></p>
-        <p id="mealThumb2"></p>
-    </p>
-    <p id="recipeDisplay">
-        <!-- display, thumbnail, title -->
-        <h2 id="recipeName3"></h2>
-        <a id="recipeLink3"><!-- --></a>
-        <p id="ingList3"></p>
-        <p id="mealThumb3"></p>
-    </p>
-
+    <link rel="stylesheet" href="style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="div1">
+            <div>
+                <h1><span class="header">What's Cooking?</span></h1>
+            </div>
+        </div>
+        <div class="header">
+            <h1>What's Cooking?</h1>
+        </div>
+        <div class="div2">
+            <form id="searchBar" action="">
+                <input  type="text" for="search" placeholder="Ingredients here">
+                <button id="searchBtn" type="submit"><span><i class="fas fa-search"></i></span></button>
+            </form>
+            <div id="buttonBox"></div>
+        </div>
+        <div class="div3">
+            <div id="results">
+                <button><i class="fas fa-utensils"></i></button>
+                <button><i class="fas fa-utensils"></i></button>
+                <button><i class="fas fa-utensils"></i></button>
+                <div>Results:</div>
+                <div>
+                    <h3>Food Title</h3>
+                     <img class="recipe" src="https://www.cookingclassy.com/wp-content/uploads/2019/07/steak-marinade-12-500x500.jpg"
+                        alt="Steak">
+                    <p>Description with ingredients</p>
+                </div>
+                <div class="recipteLists">
+                    <h3>Food Title</h3>
+                    <img class="recipe" src="https://www.cookingclassy.com/wp-content/uploads/2019/07/steak-marinade-12-500x500.jpg"
+                        alt="Steak">
+                    <p>Description with ingredients</p>
+                </div>
+                <div class="recipteLists">
+                    <h3>Food Title</h3>
+                    <img class="recipe" src="https://www.cookingclassy.com/wp-content/uploads/2019/07/steak-marinade-12-500x500.jpg"
+                        alt="Steak">
+                    <p>Description with ingredients</p>
+                </div>
+                <div>
+                    <h3>Food Title</h3>
+                    <img class="recipe" src="https://www.cookingclassy.com/wp-content/uploads/2019/07/steak-marinade-12-500x500.jpg"
+                        alt="Steak">
+                    <p>Description with ingredients</p>
+                </div>
+                <div>
+                    <h3>Food Title</h3>
+                    <img class="recipe" src="https://www.cookingclassy.com/wp-content/uploads/2019/07/steak-marinade-12-500x500.jpg"
+                        alt="Steak">
+                    <p>Description with ingredients</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
+
 </html>
