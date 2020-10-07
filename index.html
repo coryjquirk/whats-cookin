@@ -7,30 +7,46 @@
     <title>What's cooking?</title>
     <script src="https://kit.fontawesome.com/4439e3b362.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="script.js"></script>
 </head>
 
 <body>
     <div class="parent">
         <div class="div1">
-            <div><span class="header"><h1>What's Cooking?</h1></span></div>
+            <div>
+                <h1><span class="header">What's Cooking?</span></h1>
+            </div>
+        </div>
+        <div class="header">
+            <h1>What's Cooking?</h1>
         </div>
         <div class="div2">
-            <img src="https://www.alices.kitchen/wp-content/uploads/Cookware/basil-cook-cooking-691114-1280x640.jpg"
-                alt="Picture of food">
-            <form action="">
-            <input class="ingredientList" type="text" for="search" placeholder="Ingredients here">
-
-            <button id="submitBtn" type="submit"><span><i class="fas fa-search"></i></span></button>
-        </form>
+            <form id="searchBar" action="">
+                <input  type="text" for="search" placeholder="Ingredients here">
+                <button id="searchBtn" type="submit"><span><i class="fas fa-search"></i></span></button>
+            </form>
+            <div id="buttonBox"></div>
         </div>
         <div class="div3">
-            <div class="results">
+            <div id="results">
                 <button><i class="fas fa-utensils"></i></button>
                 <button><i class="fas fa-utensils"></i></button>
                 <button><i class="fas fa-utensils"></i></button>
                 <div>Results:</div>
                 <div>
+                    <h3>Food Title</h3>
+                     <img class="recipe" src="https://www.cookingclassy.com/wp-content/uploads/2019/07/steak-marinade-12-500x500.jpg"
+                        alt="Steak">
+                    <p>Description with ingredients</p>
+                </div>
+                <div class="recipteLists">
+                    <h3>Food Title</h3>
+                    <img class="recipe" src="https://www.cookingclassy.com/wp-content/uploads/2019/07/steak-marinade-12-500x500.jpg"
+                        alt="Steak">
+                    <p>Description with ingredients</p>
+                </div>
+                <div class="recipteLists">
                     <h3>Food Title</h3>
                     <img class="recipe" src="https://www.cookingclassy.com/wp-content/uploads/2019/07/steak-marinade-12-500x500.jpg"
                         alt="Steak">
