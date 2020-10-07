@@ -18,13 +18,13 @@ body {
 h1 {
     padding-top: 50px;
     padding-bottom: 50px;
-    opacity: 0.5;
+    color: black;
+
 }
 
-span {
+.header {
     background-color: white;
-    color: black;
-    opacity: 1;
+
 }
 
 
