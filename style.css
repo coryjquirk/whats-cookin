@@ -1,5 +1,5 @@
 body {
-    background-color: yellowgreen;
+    background-color:#EBD489;
 }
 .parent {
     display: grid;
@@ -12,39 +12,52 @@ body {
 .div1 {
     grid-area: 1/ 1 / 2/ 6;
     text-align: center;
-    color: white;
     z-index: 0;
 }
 
 h1 {
     padding-top: 50px;
     padding-bottom: 50px;
+    opacity: 0.5;
 }
+
+span {
+    background-color: white;
+    color: black;
+    opacity: 1;
+}
+
 
 .div2 {
     grid-area: 1 / 2 / 3 / 5;
-    margin-bottom: 100px;
+    margin-bottom: 200px;
+    background-color: #ede5cc;
 }
 
 .ingredientList {
     /* display: block; */
     width: 50%;
-    padding-top: 10px;
+    margin-top: 20px;
 }
 
 #submitBtn {
-    padding-top: 10px;
+    margin-top: 20px;
+
 }
 
 .div3 {
-    grid-area: 4 / 2 / 5 / 5;
-    margin-top: 100px;
-    padding-top: 50px;
-    background-color: whitesmoke;
+    grid-area: 2 / 2 / 5 / 5;
+    margin-top: 50px;
+    background-color: #ede5cc;
 
 }
 
 img {
     width: 100%;
     height: 100%:
+}
+
+.recipe {
+    width: 50%;
+    height: 50%;
 }
