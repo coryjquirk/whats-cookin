@@ -8,7 +8,6 @@
     <script src="https://kit.fontawesome.com/4439e3b362.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="script.js"></script>
 </head>
 
 <body>
@@ -22,19 +21,19 @@
             <h1>What's Cooking?</h1>
         </div>
         <div class="div2">
-            <form id="searchBar" action="">
-                <input  type="text" for="search" placeholder="Ingredients here">
-                <button id="searchBtn" type="submit"><span><i class="fas fa-search"></i></span></button>
-            </form>
+            <div>
+                <input id="searchBar" placeholder="Ingredients here">
+                <button id="searchBtn"><i class="fas fa-search"></i></button>
+            </div>
             <div id="buttonBox"></div>
         </div>
         <div class="div3">
-            <div id="results">
+            <div id="recipeCards">
                 <button><i class="fas fa-utensils"></i></button>
                 <button><i class="fas fa-utensils"></i></button>
                 <button><i class="fas fa-utensils"></i></button>
                 <div>Results:</div>
-                <div>
+                <!-- <div>
                     <h3>Food Title</h3>
                      <img class="recipe" src="https://www.cookingclassy.com/wp-content/uploads/2019/07/steak-marinade-12-500x500.jpg"
                         alt="Steak">
@@ -63,10 +62,13 @@
                     <img class="recipe" src="https://www.cookingclassy.com/wp-content/uploads/2019/07/steak-marinade-12-500x500.jpg"
                         alt="Steak">
                     <p>Description with ingredients</p>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
+
+<script src="script.js"></script>
+
 
 </body>
 
