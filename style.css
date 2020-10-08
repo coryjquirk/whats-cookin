@@ -1,5 +1,6 @@
 body {
     background-color:#EBD489;
+    font-family: sans-serif, 'Times New Roman', Times;
 }
 .container {
     display: grid;
@@ -7,13 +8,14 @@ body {
     grid-template-rows: (5, 1fr);
     grid-column-gap: 10px;
     grid-row-gap: 10px;
-
 }
 
-.div1 {
+.hero {
     grid-area: 1/ 1 / 1/ 6;
-    text-align: center;
     background-image: url("https://www.alices.kitchen/wp-content/uploads/Cookware/basil-cook-cooking-691114-1280x640.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     opacity: .6;
 }
 
@@ -31,20 +33,16 @@ h1 {
 }
 
 
-.div2 {
-    grid-area: 2 / 1 / 2 / 2;
-    margin-bottom: 200px;
+.searchArea {
+    grid-area: 2 / 2 / 2 / 2;
+    margin-bottom: 0px;
     background-color: #ede5cc;
+    z-index: 0;
+    border: black dotted;
 }
 
-#submitBtn {
-    margin-top: 20px;
-}
-
-.div3 {
-    grid-area: 3/1/2/2;
-    margin-top: 50px;
-    background-color: #ede5cc;
+#searchBar {
+margin: 10px;
 }
 
 .sub-grid {
@@ -53,9 +51,10 @@ display: grid;
     grid-template-rows: (5, 1fr);
     grid-column-gap: 10px;
     grid-row-gap: 10px;
+    margin: 10px;
 }
 
-.div4 {
+.div3 {
     grid-area: 1/1/1/3;
 
 }

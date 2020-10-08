@@ -13,34 +13,29 @@
 
 <body>
     <div class="container">
-        <div class="div1">
-        </div>
+        <div class="hero"></div>
         <div class="header">
             <h1>What's Cooking?</h1>
         </div>
-        <div class="div2">
-            <form id="searchBar" action="">
+        <div class="searchArea">
+            <form id="searchBar" name="ingredient search">
                 <input type="text" for="search" placeholder="Ingredients here">
                 <button id="searchBtn" type="submit"><span><i class="fas fa-search"></i></span></button>
             </form>
-
-        </div>
-
-        <div class="div3 ">
-
+            <form name="groceries finder">
+                <button id="groceriesBtn">Need groceries?</button>
+            </form>
             <div id="results" class="sub-grid">
 
-                <div class="div4">
+                <div class="div3">
 
-                    <div id="buttonBox">
-
+                    <form id="buttonBox">
                         <button class="resultBtn"><i class="fas fa-utensils"></i></button>
                         <button class="resultBtn"><i class="fas fa-utensils"></i></button>
                         <button class="resultBtn"><i class="fas fa-utensils"></i></button>
-
-                        <div>Results:</div>
-
-                    </div>
+                    </form>
+                    
+                    <h2>Results:</h2>
 
                     <div class="recipeResults">
 
@@ -50,7 +45,7 @@
                                 src="https://www.cookingclassy.com/wp-content/uploads/2019/07/steak-marinade-12-500x500.jpg"
                                 alt="Steak">
                             <div class="recipeLinks">
-                                <p class="recipeLinks">Icon links</p>
+                            Icon links
                             </div>
                         </div>
 
@@ -59,7 +54,7 @@
                             <img class="recipe"
                                 src="https://www.cookingclassy.com/wp-content/uploads/2019/07/steak-marinade-12-500x500.jpg"
                                 alt="Steak">
-                            <div class="recipeLinks">   
+                            <div class="recipeLinks">
                                 Icon links
                             </div>
                         </div>
@@ -67,7 +62,6 @@
                 </div>
             </div>
         </div>
-
 </body>
 
 </html>
