@@ -19,19 +19,12 @@ function searchIngred(foodItem){
             })
   
       .then(function(response) {
-        
-        
-        
-      
-        
+
         var recipeTitle = response.meals[0].strMeal;
         var recipeThumb = response.meals[0].strMealThumb;
         var sourceLink = response.meals[0].strSource;
         var recipeYoutube = response.meals[0].strYoutube;
-        console.log("DA TITLE " + recipeTitle)
-        console.log("DA THUMBNAIL LINK " + recipeThumb)
-        console.log("DIS BE DA SOURCE LINk " + sourceLink)
-        console.log("YOUTUBE LINK " + recipeYoutube)
+
         publishInfo(recipeTitle, recipeThumb, sourceLink, recipeYoutube)
         
     })
@@ -171,3 +164,4 @@ function searchIngred(foodItem){
     window.open("https://www.google.com/maps/search/grocery+stores/@" + latitude + "," + longitude + ",12z/data=!4m4!2m3!5m1!2e1!6e6", '_blank')
   
   }
+
