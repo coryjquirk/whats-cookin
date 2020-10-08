@@ -1,12 +1,13 @@
 body {
     background-color:#EBD489;
 }
-.parent {
+.container {
     display: grid;
     grid-template-columns: (5, 1fr);
     grid-template-rows: (5, 1fr);
     grid-column-gap: 10px;
     grid-row-gap: 10px;
+
 }
 
 .div1 {
@@ -36,27 +37,47 @@ h1 {
     background-color: #ede5cc;
 }
 
-.ingredientList {
-    /* display: block; */
-    width: 50%;
-    margin-top: 20px;
-}
-
 #submitBtn {
     margin-top: 20px;
 }
 
 .div3 {
-    grid-area: 2 / 1 / 3 / 2;
+    grid-area: 3/1/2/2;
     margin-top: 50px;
     background-color: #ede5cc;
-    border: solid black;
 }
 
-img {
-    width: 100%;
+.sub-grid {
+display: grid;
+    grid-template-columns: (5, 1fr);
+    grid-template-rows: (5, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+
+.div4 {
+    grid-area: 1/1/1/3;
+
+}
+
+.resultBtn {
+    width: 30%;
+}
+
+.recipeResults {
+    grid-area: 1/1/6/2;
+margin: 10px;
+}
+.recipeLists {
+margin: 10px;
 }
 
 .recipe {
+    display: inline-block;
     width: 25%;
+}
+
+.recipeLinks {
+    grid-area: 2/1/4/3;
+    display: inline-block;
 }
