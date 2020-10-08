@@ -1,62 +1,130 @@
 body {
-    background-color:#EBD489;
+    margin: 0;
+    padding-bottom: 0;
+    
+    
+  
 }
-.parent {
+body::after {
+    content: "";
+    /* background: url("https://www.alices.kitchen/wp-content/uploads/Cookware/basil-cook-cooking-691114-1280x640.jpg"); */
+    background-color:white;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  
+
+.container {
     display: grid;
-    grid-template-columns: (5, 1fr);
-    grid-template-rows: (5, 1fr);
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(25px, auto);
+    min-height: 100vh;
+   
+    }
+.main-head {
+        
+        text-align: center;
+        font-size: x-large;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        background: url("img-wg-arable.jpg");
+        background-repeat: no-repeat;
+        background-size: stretch;
+        background-position: center;
+        /* opacity: .6; */
+        z-index: 0
+    }
+
+#headerText{
+    z-index:  1;
+   
+    color: black;
+    
+}
+.main-search{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    justify-content: center;
+    justify-self: center;
+    align-items: center;
+    
+    padding: 5px
 }
 
-.div1 {
-    grid-area: 1/ 1 / 1/ 6;
+.ingredient1{
+
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    justify-content: center;
+    justify-self: center;
+    align-items: center;
+
+
+}
+.ingredient2{
+
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    justify-content: center;
+    justify-self: center;
+    align-items: center;
+}
+    .ingredButton{
+    margin: 5px;
+    padding: 5px
+}
+
+.results{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
     text-align: center;
-    background-image: url("https://www.alices.kitchen/wp-content/uploads/Cookware/basil-cook-cooking-691114-1280x640.jpg");
-    opacity: .6;
-}
+    align-items: center;
+    
+} 
+.thumbnail{
+    
+    grid-column-start: 1;
+    grid-column-end: 2;
+    justify-content: center;
 
-h1 {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    color:black;
-    font-size: 48px;
 }
-
-.header {
-    grid-area: 1/ 1 / 1/ 6;
+.recipeTitle{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    
+}
+.recipeLinks{
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+.thumbnailImg{
+    max-width: 33%;
+}
+footer {
+    align-self: end;
+    grid-column-start: 2;
+    grid-column-end: 3;
+   
     text-align: center;
-    z-index: 0;
-}
 
-
-.div2 {
-    grid-area: 2 / 1 / 2 / 2;
-    margin-bottom: 200px;
-    background-color: #ede5cc;
-}
-
-.ingredientList {
-    /* display: block; */
-    width: 50%;
-    margin-top: 20px;
-}
-
-#submitBtn {
-    margin-top: 20px;
-}
-
-.div3 {
-    grid-area: 2 / 1 / 3 / 2;
-    margin-top: 50px;
-    background-color: #ede5cc;
-    border: solid black;
-}
-
-img {
-    width: 100%;
-}
-
-.recipe {
-    width: 25%;
 }
