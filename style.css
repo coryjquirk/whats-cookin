@@ -1,17 +1,34 @@
 body {
+    margin: 0;
+    padding-bottom: 0;
     background-color:#EBD489;
-    font-family: sans-serif, 'Times New Roman', Times;
 }
+body::after {
+    content: "";
+    background-color:#EBD489;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
 .container {
     display: grid;
-    grid-template-columns: (5, 1fr);
-    grid-template-rows: (5, 1fr);
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
-}
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(200px, auto);
+    min-height: 100vh;
+    margin-bottom: -50px;
+    }
 
 .hero {
-    grid-area: 1/ 1 / 1/ 6;
+    grid-area: 1/ 1 / 1/ 4;
     background-image: url("https://www.alices.kitchen/wp-content/uploads/Cookware/basil-cook-cooking-691114-1280x640.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -19,64 +36,81 @@ body {
     opacity: .6;
 }
 
+.header {
+    grid-area: 1/ 1 / 1/ 4;
+    text-align: center;
+    z-index: 0;
+}
+    
 h1 {
     padding-top: 50px;
     padding-bottom: 50px;
     color:black;
     font-size: 48px;
 }
+    
+#headerText{
+    z-index:  1;
+    color: black;
+}
 
-.header {
-    grid-area: 1/ 1 / 1/ 6;
+.main-search{
+    grid-area: 2/2/2/3;
+    justify-content: center;
+    justify-self: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.ingredient1{
+display: inline;
+}
+
+.ingredient2{
+    display: inline;
+}
+
+    .ingredButton{
+    margin: 5px;
+    padding: 5px
+    
+}
+
+.results{
+    grid-area: 3/2/3/3;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
     text-align: center;
-    z-index: 0;
+    align-items: center;
+    padding: 5px;
+} 
+
+.thumbnail{
+    grid-column-start: 2;
+    grid-column-end: 2;
+    justify-content: center;
+}
+.recipeTitle{
+    grid-column-start: 1;
+    grid-column-end: 1;
 }
 
-
-.searchArea {
-    grid-area: 2 / 2 / 2 / 2;
-    margin-bottom: 0px;
-    background-color: #ede5cc;
-    z-index: 0;
-    border: black dotted;
+.recipeLinks{
+    grid-column-start: 3;
+    grid-column-end: 3;
 }
 
-#searchBar {
-margin: 10px;
+.thumbnailImg{
+    min-width: 25%;
+    max-width: 40%;
 }
 
-.sub-grid {
-display: grid;
-    grid-template-columns: (5, 1fr);
-    grid-template-rows: (5, 1fr);
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
-    margin: 10px;
-}
-
-.div3 {
-    grid-area: 1/1/1/3;
-
-}
-
-.resultBtn {
-    width: 30%;
-}
-
-.recipeResults {
-    grid-area: 1/1/6/2;
-margin: 10px;
-}
-.recipeLists {
-margin: 10px;
-}
-
-.recipe {
-    display: inline-block;
-    width: 25%;
-}
-
-.recipeLinks {
-    grid-area: 2/1/4/3;
-    display: inline-block;
+footer {
+    align-self: end;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    height: 50px;
+    text-align: center;
+    padding: 10px;
 }

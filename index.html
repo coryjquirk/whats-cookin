@@ -7,7 +7,7 @@
     <title>What's cooking?</title>
     <script src="https://kit.fontawesome.com/4439e3b362.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
-    
+
 </head>
 
 <body>
@@ -16,55 +16,26 @@
         <div class="header">
             <h1>What's Cooking?</h1>
         </div>
-        <div class="searchArea">
-            <form id="searchBar" name="ingredient search">
-                <input type="text" for="search" placeholder="Ingredients here">
-                <button id="searchBtn" type="submit"><span><i class="fas fa-search"></i></span></button>
+
+        <div class="main-search">
+            <form onSubmit="return false;">
+                <input class="form" placeholder="Search Ingredient" id="searchBar">
+                <button id="searchBtn" type="button"><i class="fas fa-search"></i></button>
             </form>
-            <form name="groceries finder">
-                <button id="findGrocery">Need groceries?</button>
-            </form>
-            <div id="results" class="sub-grid">
-
-                <div class="div3">
-
-                    <form id="buttonBox">
-                        <button class="resultBtn"><i class="fas fa-utensils"></i></button>
-                        <button class="resultBtn"><i class="fas fa-utensils"></i></button>
-                        <button class="resultBtn"><i class="fas fa-utensils"></i></button>
-                    </form>
-                    
-                    <h2>Results:</h2>
-
-                    <div class="recipeResults">
-
-                        <div class="recipeLists">
-                            <h3>Food Title</h3>
-                            <img class="recipe"
-                                src="https://www.cookingclassy.com/wp-content/uploads/2019/07/steak-marinade-12-500x500.jpg"
-                                alt="Steak">
-                            <div class="recipeLinks">
-                            Icon links
-                            </div>
-                        </div>
-
-                        <div class="recipeLists">
-                            <h3>Food Title</h3>
-                            <img class="recipe"
-                                src="https://www.cookingclassy.com/wp-content/uploads/2019/07/steak-marinade-12-500x500.jpg"
-                                alt="Steak">
-                            <div class="recipeLinks">
-                                Icon links
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <div class=ingredient1></div>
+            <div class="ingredient2"></div>
         </div>
+        
+        <div class="results"></div>
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="script.js"></script>
+        <footer id="findGrocery">
+            NEED GROCERIES? <button>CLICK HERE!</button>
+        </footer>
 
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
