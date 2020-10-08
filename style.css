@@ -54,6 +54,10 @@ h1 {
     color: black;
 }
 
+#searchBar {
+    width: 60%;
+}
+
 .main-search{
     grid-area: 2/2/2/3;
     justify-content: center;
