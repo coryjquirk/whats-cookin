@@ -4,7 +4,6 @@
 * If you have stray ingredients in your house that you're not sure what to do with, this app will help you find recipes that include those ingredients.
 * This application asks for your current location to help find a grocery store nearby.
 * Mobile-first layout.
-* 
 
 ## Usage
 * Type in the name of your ingredient and hit the submit button.
