@@ -18,7 +18,7 @@
 * Repository: https://github.com/coryjquirk/whats-cookin
 
 ### Screenshot
-<img src="https://coryjquirk.github.io/whats-cookin/screenshot.PNG" alt="application screenshot">
+<img src="https://coryjquirk.github.io/whats-cookin/demo.gif" alt="application screenshot">
 
 
 ## Features in Development
