@@ -17,8 +17,7 @@
 * Repository: https://github.com/coryjquirk/whats-cookin
 
 ### Screenshot
-<img src="https://coryjquirk.github.io/whats-cookin/demo.gif" alt="application screenshot">
-
+<img src="https://github.com/coryjquirk/whats-cookin/blob/main/demo.gif?raw=true" alt="application screenshot">
 
 ## Features in Development
 * Ability to search for more than two ingredients
